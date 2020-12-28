@@ -14,11 +14,16 @@ const App =() =>{
            })
        })
     }
-    const theList = () =>{
+     const theList = () =>{
+        if(list === ""){
+            alert("Please Input Somethings")
+        }
+        else{
         setitem((oldItems) =>{
             return [...oldItems,list]
         })
         setList("");
+    }
     }
 
      return (
